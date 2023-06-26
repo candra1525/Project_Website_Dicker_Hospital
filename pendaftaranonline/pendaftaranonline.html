@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran Online Dicker Hospital</title>
+
+    <!-- Link CSS regis -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="../assets/img/icon/DICKER_HOSPITAL_NO_BG.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="column1">
+        <form id="form" class="form">
+          <h2>Pendaftaran Online</h2>
+          <div class="form-control">
+            <label for="fullname">Nama Lengkap</label>
+            <input type="text" id="fullname" placeholder="Enter Full Name" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="noKTP">No. KTP</label>
+            <input type="number" id="noKTP" placeholder="Enter No KTP" />
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" placeholder="+62 8XX-XXXX-XXXX " />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="agama">Agama</label>
+            <select name="Agama" id="agama" style="width: 100%; padding: 15px 20px; cursor: pointer; border: 1px solid rgb(230, 230, 230)">
+              <option value="Islam">Islam</option>
+              <option value="KristenProtestan">Kristen Protestan</option>
+              <option value="Katholik">Katholik</option>
+              <option value="Hindu">Hindu</option>
+              <option value="Budha">Buddha</option>
+              <option value="KongHucu">Konghucu</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label for="wargaN">Warga Negara</label>
+            <select name="WargaNegara" id="WN" style="width: 100%; padding: 15px 20px; cursor: pointer; border: 1px solid rgb(230, 230, 230)">
+              <option value="WNI">WNI</option>
+              <option value="WNA">WNA</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label for="gender">Gender</label>
+            <select name="Gender" id="Gender" style="width: 100%; padding: 15px 20px; cursor: pointer; border: 1px solid rgb(230, 230, 230)">
+              <option value="L">Laki-laki</option>
+              <option value="P">Perempuan</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label for="tmptLahir">Tempat Lahir</label>
+            <input type="text" id="tmptLahir" placeholder="Tempat Lahir" />
+          </div>
+          <div class="form-control">
+            <label for="tglLahir">Tgl Lahir</label>
+            <input type="date" name="tglLahir" id="tgl" />
+          </div>
+          <div class="form-control">
+            <label for="alamat">Alamat</label>
+            <textarea name="alamat" id="alamat" cols="40" rows="5" style="width: 100%; border: 1px solid rgb(230, 230, 230)"></textarea>
+          </div>
+
+          <button style="margin-left: 315px">Submit</button>
+        </form>
+      </div>
+      <div class="column2">
+        <img src="../assets/img/icon/DICKER HOSPITAL.png" alt="pablo-sign-up" border="0" class="signup-image" />
+      </div>
+    </div>
+    <script src="pendaftaran.js"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error - DICKER HOSPITAL</title>
+    <link rel="shortcut icon" href="assets/img/icon/DICKER_HOSPITAL_NO_BG.ico" type="image/x-icon" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@500&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+        font-family: "Quicksand";
+        color: black;
+      }
+
+      main {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        padding: 30px;
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      main img {
+        margin-bottom: 100px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .error {
+        transition: all 0.3s ease 0s;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* border: 1px solid black; */
+        padding: 30px;
+      }
+
+      .tombol_login {
+        width: 150px;
+        color: white;
+        font-size: 15pt;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        padding: 15px 0;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: all 0.3s ease 0s;
+        background-color: #2b4a9d;
+      }
+
+      .lgn:hover .tombol_login {
+        width: 200px;
+        background-color: #95beff;
+        font-weight: bold;
+        color: black;
+      }
+
+      h2 {
+        margin: 20px 0;
+        font-weight: 13pt;
+        font-weight: bold;
+      }
+
+      .regis {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        padding: 15px 0;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: all 0.3s ease 0s;
+        background-color: #2b4a9d;
+        color: white;
+        font-size: 15pt;
+      }
+
+      .register:hover .regis {
+        width: 250px;
+        background-color: #95beff;
+        font-weight: bold;
+        color: black;
+      }
+
+      @media screen and (max-width: 1000px) {
+        .error {
+          flex-direction: column-reverse;
+          margin-bottom: 80px;
+        }
+      }
+      @media screen and (max-width: 700px) {
+        .gambar img {
+          width: 50%;
+        }
+
+        main img {
+          width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <center>
+        <img src="assets/img/icon/DICKER_HOSPITAL_NO_BG.png" alt="hospital" />
+      </center>
+      <div class="error">
+        <div class="kata">
+          <h1>
+            Opss.... <br />
+            Silahkan Login terlebih dahulu 😁
+          </h1>
+        </div>
+
+        <div class="gambar">
+          <center>
+            <img src="assets/img/foto/hospital_1.png" alt="" />
+          </center>
+        </div>
+      </div>
+      <center>
+        <a href="login/login.html" class="lgn"><button class="tombol_login">Yuk Login</button></a>
+        <h2>Jika belum memiliki Akun, silahkan Register</h2>
+        <a href="registrasi/registrasi.html" class="register"><button class="regis">Register Dulu</button></a>
+      </center>
+    </main>
+  </body>
+</html>

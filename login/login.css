@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+    --checkmark-color: #43b324;
+}
+
+body {
+    background-color: #f9f8fb;
+    font-family: 'Poppins',
+        sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 120px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 16.83px 0.17px rgba(0, 0, 0, .05);
+    -webkit-box-shadow: 0 15px 16.83px 0.17px rgba(0, 0, 0, .05);
+    width: 900px;
+    max-width: 1200px;
+    padding: 30px;
+    display: flex;
+}
+
+
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #222;
+    margin: 0 0 30px;
+
+}
+
+.column1,
+.column2 {
+    width: 50%;
+}
+
+.column2 .signup-image {
+    max-width: 110%;
+}
+
+.column2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form blockquote{
+    /* padding: 30px 50px; */
+    text-align: left;
+}
+
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+.form-control label {
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    font-family: 'Poppins',
+        sans-serif;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control:after {
+    content: '\2713';
+    font-size: 1.5rem;
+    opacity: 0;
+    color: var(--checkmark-color);
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-30%);
+    transition: all ease .4s;
+}
+
+.form-control input:focus {
+    outline: none;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control.success:after {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 4;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+button {
+    cursor: pointer;
+    background: #6dabe4;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 39px;
+    margin-top: 20px;
+    transition: all ease .25s;
+}
+
+button:hover {
+    background: #4292dc;
+}
+
+@media screen and (max-width: 960px) {
+
+    body {
+        padding: 80px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .column1,
+    .column2 {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .form-control input {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .form {
+        padding: 30px 20px;
+    }
+
+    .form-control {
+        margin-bottom: 5px;
+        padding-bottom: 15px;
+    }
+}
+
+
+
+/*
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+img {
+    width: 62%;
+}
+
+.login-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100% auto;
+  height: 100vh;
+}
+
+.login-content-kanan {
+  position: fixed;
+
+  width: 35%;
+  background-color: #EEF1FF;
+  border-radius: 10px;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 79.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-content .login-content-kanan form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #EEF1FF;
+  border-radius: 8px;
+}
+
+.login-content .login-content-kanan form h2 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.login-content .login-content-kanan form label {
+  margin-top: 15px;
+  margin-bottom: 7px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.login-content .login-content-kanan form label span {
+  color: red;
+  font-weight: bold;
+}
+
+.login-content .login-content-kanan form .text-input {
+  height: 40px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.login-content .login-content-kanan form .submit {
+  margin-top: 30px;
+  height: 40px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login-content .login-content-kanan form .submit:hover {
+  width: 100%;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.login-content .login-content-kanan form blockquote {
+  margin-top: 20px;
+  padding: 10px;
+}
+.login-content .login-content-kanan form blockquote a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.login-content .login-content-kanan form blockquote a:hover {
+  font-size: 17px;
+}
+
+.popup_close:link,
+.popup_close:visited
+{
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
+  display: inline-block;
+  line-height: 1;
+  transition: all .3s;
+}
+
+.popup_close:hover,
+.popup_close:active
+{
+  color: #555;
+}
+
+@media screen and (max-width: 820px) {
+  .login-content {
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+  }
+  .login-content .login-content-kanan form {
+    background-color: #fff;
+  }
+
+  .login-content .login-content-kanan form h2 {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .login-content .login-content-kanan {
+    height: auto;
+    margin-top: -180px;
+  }
+  .login-content .login-content-kiri {
+    background-color: #fff;
+    height: auto;
+  }
+
+  .login-content .login-content-kanan form .text-input {
+    background-color: rgba(66, 194, 255, 0.3);
+  }
+  .login-content .login-content-kanan form .submit {
+    background-color: rgba(66, 194, 255, 0.5);
+  }
+} */
